@@ -1,4 +1,4 @@
-import { GeneratedScript, Tone } from './types';
+import { GeneratedScript, Tone, ScriptTemplate } from './types';
 
 // The exact example from the user request, used as the initial state
 export const DEFAULT_SCRIPT: GeneratedScript = {
@@ -50,4 +50,49 @@ export const TONES = [
   Tone.HUMOROUS,
   Tone.AUTHORITATIVE,
   Tone.PERSONAL
+];
+
+export const SCRIPT_TEMPLATES: ScriptTemplate[] = [
+  {
+    label: 'Tech Tip',
+    topic: 'Hidden Smartphone Battery Trick',
+    tone: Tone.URGENT,
+    duration: 45,
+    iconName: 'Smartphone'
+  },
+  {
+    label: 'Fitness Hack',
+    topic: 'Fix Your Posture in 30 Seconds',
+    tone: Tone.MOTIVATIONAL,
+    duration: 40,
+    iconName: 'Dumbbell'
+  },
+  {
+    label: 'Recipe Hack',
+    topic: '3-Ingredient Mug Cake in 60 Seconds',
+    tone: Tone.HUMOROUS,
+    duration: 50,
+    iconName: 'Utensils'
+  },
+  {
+    label: 'Life Lesson',
+    topic: 'The Rule of Thirds for Happiness',
+    tone: Tone.STORYTELLING,
+    duration: 60,
+    iconName: 'BookHeart'
+  },
+  {
+    label: 'Productivity',
+    topic: 'The 2-Minute Rule to Stop Procrastination',
+    tone: Tone.AUTHORITATIVE,
+    duration: 50,
+    iconName: 'Zap'
+  },
+  {
+    label: 'Finance',
+    topic: 'Stop Buying Coffee? Do This Instead',
+    tone: Tone.URGENT,
+    duration: 45,
+    iconName: 'TrendingUp'
+  }
 ];
